@@ -1,4 +1,5 @@
 Weather API Documentation
+
 Overview
 The Weather API provides users with real-time weather information based on their registered location. The API includes user registration, authentication, and weather data retrieval for a specific username.
 Base URL
@@ -9,7 +10,9 @@ Authentication
 The API uses Basic Authentication to secure its endpoints. All requests to protected endpoints must include the Authorization header containing the user's username and password encoded in base64.
 Authorization Header Format
 Authorization: Basic <base64encoded(username:password)>
+
 Endpoints
+
 1. User Registration
 URL: /api/registration
 Method: POST
@@ -27,6 +30,7 @@ Request Body:
    "livingCountry": "USA",
    "citizenCountry": "USA"
 }
+
 
 Response:
 •	201 Created – Successfully registered the user.
